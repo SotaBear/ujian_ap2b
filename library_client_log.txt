@@ -1,0 +1,23 @@
+--- Library Client Log Started: 2025-06-28 08:31:32.867044 ---
+[2025-06-28 08:31:32.867611] [MainClient] Memulai 4 pengecekan status buku secara concurrent.
+[2025-06-28 08:31:32.870586] [Worker-0] Memulai pekerjaan untuk ISBN: 978-3-16-148410-0
+[2025-06-28 08:31:32.872177] [Worker-0] Mengirim permintaan GET untuk isbn: 978-3-16-148410-0 ke http://127.0.0.1:5000/check_book_status?isbn=978-3-16-148410-0
+[2025-06-28 08:31:32.873535] [Worker-2] Memulai pekerjaan untuk ISBN: 999-9-99-999999-9
+[2025-06-28 08:31:32.874531] [Worker-1] Memulai pekerjaan untuk ISBN: 978-0-26-110221-7
+[2025-06-28 08:31:32.875537] [Worker-3] Memulai pekerjaan untuk ISBN: 978-1-40-885565-2
+[2025-06-28 08:31:32.877581] [Worker-3] Mengirim permintaan GET untuk isbn: 978-1-40-885565-2 ke http://127.0.0.1:5000/check_book_status?isbn=978-1-40-885565-2
+[2025-06-28 08:31:32.878468] [Worker-1] Mengirim permintaan GET untuk isbn: 978-0-26-110221-7 ke http://127.0.0.1:5000/check_book_status?isbn=978-0-26-110221-7
+[2025-06-28 08:31:32.881024] [Worker-2] Mengirim permintaan GET untuk isbn: 999-9-99-999999-9 ke http://127.0.0.1:5000/check_book_status?isbn=999-9-99-999999-9
+[2025-06-28 08:31:32.989156] [Worker-3] Berhasil! Buku '978-1-40-885565-2: Judul Harry Potter and the Philosopher's Stone, Status Available, Lokasi Rak F-1
+[2025-06-28 08:31:32.989877] [Worker-3] Selesai pemrosesan permintaan untuk ISBN: 978-1-40-885565-2
+[2025-06-28 08:31:32.990784] [Worker-3] Selesai pekerjaan untuk ISBN: 978-1-40-885565-2
+[2025-06-28 08:31:33.080655] [Worker-1] Berhasil! Buku '978-0-26-110221-7: Judul The Lord of The Rings, Status On Loan, Lokasi N/A
+[2025-06-28 08:31:33.081339] [Worker-1] Selesai pemrosesan permintaan untuk ISBN: 978-0-26-110221-7
+[2025-06-28 08:31:33.082005] [Worker-1] Selesai pekerjaan untuk ISBN: 978-0-26-110221-7
+[2025-06-28 08:31:33.105696] [Worker-2] Error: ISBN 999-9-99-999999-9 tidak ditemukan. Pesan: Book with ISBN '999-9-99-999999-9' not found in the catalog.
+[2025-06-28 08:31:33.106829] [Worker-2] Selesai pemrosesan permintaan untuk ISBN: 999-9-99-999999-9
+[2025-06-28 08:31:33.107666] [Worker-2] Selesai pekerjaan untuk ISBN: 999-9-99-999999-9
+[2025-06-28 08:31:33.168023] [Worker-0] Berhasil! Buku '978-3-16-148410-0: Judul The Art of Concurrent Programming, Status Available, Lokasi Rak A-3
+[2025-06-28 08:31:33.168863] [Worker-0] Selesai pemrosesan permintaan untuk ISBN: 978-3-16-148410-0
+[2025-06-28 08:31:33.171210] [Worker-0] Selesai pekerjaan untuk ISBN: 978-3-16-148410-0
+[2025-06-28 08:31:33.172821] [MainClient] Semua pengecekan buku selesai dalam 0.30 detik.
